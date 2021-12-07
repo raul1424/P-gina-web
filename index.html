@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Pelicula/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header" id="inicio">
+        
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            
+                <a class="hover" href="#inicio">Inicio</a>
+                <a class="hover" href="#acerca">Acerca de ...</a>
+                <a class="hover"href="#planteles">PLanteles</a>
+                <a class="hover" href="#revista">Revistas</a>
+                <a class="hover"href="Peliculas/indexp.html">Peliculas</a>
+                <a class="hover" href="#footer">Contacto</a>
+            
+        </nav>
+        <div class="contenedor head">
+            <div class="inicio">
+                <img class ="uacm" src="img/uacm.png" >              
+            </div>
+            <h3 class="titulo">Universidad Autónoma de la Ciudad de México.</h3>
+            <p class="copy"><h2>Nada humano me es ajeno.</h2></p>
+            <hr>
+        </div>
+        
+    </header>
+    <main>
+        <section class="acercade contenedor" id="acerca">
+            <h2 class="subtitulo">Acerca de ...</h2>
+            <div class="contenedor-acerca">
+                <img src="img/programacion.jpg"  >
+                <div class="checklist-acerca">
+                    <div class="acerca">
+                        <h3 class="n-acerca"><span class="number">1</span>Programación web</h3>
+                        <p>La programación de los sitios web es una de las disciplinas dentro del mundo de
+                             Internet que más se ha desarrollado y no deja de sorprender día a día con las 
+                             posibilidades que abre y genera, ya que no sólo consigue satisfacer necesidades 
+                             que se generan, sino que sin la generación de necesidades ofrecen servicios a 
+                             los usuarios que éstos no habían imaginado.</p>
+                    </div>
+                    <div class="acerca">
+                        <h3 class="n-acerca"><span class="number">2</span>Html, Css, JavaScript</h3>
+                        <p> Una descripción general:
+
+                            <li>HTML proporciona la estructura básica de los sitios, que es mejorada y modificada 
+                                por otras tecnologías como CSS y JavaScript.</li>
+                            <li>CSS se utiliza para controlar la presentación, el formato y el diseño.</li>
+                            <li>JavaScript se utiliza para controlar el comportamiento de diferentes elementos.</li></p>
+                    </div>
+                    <div class="acerca">
+                        <h3 class="n-acerca"><span class="number">3</span>Diseño web</h3>
+                        <p> El diseño web es un área enfocada en el desarrollo de interfaces digitales, como el diseño
+                             de sitios y aplicaciones para web. Para ello, los diseñadores web crean las páginas 
+                             utilizando lenguajes de marcado como HTML.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="planteles">
+            <div class="contenedor">
+                <h2 class="subtitulo">Planteles</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/cuautepec.jpg" class="img-galeria imagen">
+                    <img src="img/tezonco.jpg" class="img-galeria imagen">
+                    <img src="img/libertad.jpg" class="img-galeria imagen">
+                    <img src="img/valle.jpg" class="img-galeria imagen">
+                    <img src="img/centro.jpg" class="img-galeria imagen">
+                    <img src="img/garcia.jpg" class="img-galeria imagen">
+                </div>
+            </div>
+        </section>
+
+        <!--lightbox-->
+
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="revista">
+            <h2 class="subtitulo">Revistas</h2>
+            <section class="revista">
+                <div class="cont-revista">
+                    <a href="https://sg.com.mx/"><img class="imagen" src="img/softwareguru.jpg"></a>
+                    <h3 class="n-revista">Software Guru</h3>
+                </div>
+                <div class="cont-revista">
+                    <a href="https://sg.com.mx/"><img class="imagen" src="img/IEEE.jpg"></a>
+                    <h3 class="n-revista">Articulos</h3>
+                </div>
+                <div class="cont-revista">
+                    <a href=https://portalweb.uacm.edu.mx/uacm/acercate/es-es/home.aspx> <img class="imagen" src="img/acercate.jpg" ></a>
+                    <h3 class="n-revista">Acercate</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand"><a href="https://www.uacm.edu.mx">UACM.</h2>
+                    <p>Ingenieria de software.</p>
+                    <p>Raúl Juárez Bautista</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/UACM.edu.mx" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/uacm" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/uacm.slt/" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://www.google.com/" class="social-media-icon">
+                        <i class='bx bx-search' ></i>
+                    </a>
+
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
