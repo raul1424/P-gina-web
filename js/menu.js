@@ -1,15 +1,15 @@
-const hamburguer = document.querySelector('.hamburguer')
-const menu = document.querySelector('.menu-navegacion')
+const hamburguer = document.querySelector('.hamburguer'); //clase
+const menu = document.querySelector('.menu-navegacion');//clase
 
 
-hamburguer.addEventListener('click', ()=>{
-    menu.classList.toggle("spread")
+hamburguer.addEventListener('click', ()=>{ //se agrega y se quita
+    menu.classList.toggle("spread");
 })
 
-window.addEventListener('click', e =>{
+window.addEventListener('click', e =>{ //nos ayuda acerrar el munu
     if(menu.classList.contains('spread') 
         && e.target != menu && e.target != hamburguer){
         console.log('cerrar')
-        menu.classList.toggle("spread")
+        menu.classList.toggle("spread");
     }
 })
